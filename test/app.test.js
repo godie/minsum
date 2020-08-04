@@ -13,7 +13,7 @@ describe('app.js test minSum', () => {
         expect(result).to.equal(14);
     });
     
-    describe('should be equal 17', () => {
+    describe('should be equal 19', () => {
         let start = performance.now();
 
         const result = app.minSum([10,20,7], 3);
@@ -23,7 +23,7 @@ describe('app.js test minSum', () => {
         expect(result).to.equal(19);
     });
     
-    describe('should be equal 17', () => {
+    describe('should be equal 26', () => {
         let start = performance.now();
 
         const result = app.minSum([10,20,7,7,7,7], 7);
@@ -33,7 +33,7 @@ describe('app.js test minSum', () => {
         expect(result).to.equal(26);
     });
 
-    describe('should be equal 23', () => {
+    describe('should be equal 24', () => {
         let start = performance.now();
         const result = app.minSum([10,20,7,5,7,6], 7);
         var end = performance.now();
@@ -42,9 +42,9 @@ describe('app.js test minSum', () => {
         expect(result).to.equal(24);
     });
     
-    describe('should be equal 17', () => {
+    describe('should be equal 5000', () => {
         let start = performance.now();
-        const result = app.minSum(cincoMIL, 10000000);
+        const result = app.minSum(cincoMIL, 1000000);
         var end = performance.now();
         console.log(`Execution time: ${end - start} ms`);
         console.log(result);
@@ -52,4 +52,4 @@ describe('app.js test minSum', () => {
     });
     
 
-});
+}); 
